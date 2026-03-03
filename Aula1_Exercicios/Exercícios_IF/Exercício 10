@@ -1,15 +1,15 @@
+# Identificar Números Pares e Ímpares
+
 pares = 0
 impares = 0
-
 
 for i in range(10):
     numero = int(input(f"Introduza o {i+1}º número: "))
     
-    # Verificar se é par ou ímpar
     if numero % 2 == 0:
-        pares = pares + 1      # par
+        pares = pares + 1
     else:
-        impares = impares + 1  # ímpar
+        impares = impares + 1
 
 # Resultado
 print(f"\nPares: {pares}")

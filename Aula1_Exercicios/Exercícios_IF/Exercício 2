@@ -1,9 +1,9 @@
+# Encontrar o Maior e o Menor Valor entre 3 Números
 
 num1 = int(input("Introduza o primeiro número: "))
 num2 = int(input("Introduza o segundo número: "))
 num3 = int(input("Introduza o terceiro número: "))
 
-# Encontrar o maior número
 if num1 >= num2 and num1 >= num3:
     maior = num1
 elif num2 >= num1 and num1 >= num3:
@@ -11,7 +11,6 @@ elif num2 >= num1 and num1 >= num3:
 else:
     maior = num3
     
-# Encontrar o menor número
 if num1 <= num2 and num1 <= num3:
     menor = num1
 elif num2 <= num1 and num2 <= num3:
@@ -19,7 +18,5 @@ elif num2 <= num1 and num2 <= num3:
 else:
     menor = num3
 
-
-# Mostrar o resultado
 print("Maior:", maior)
 print("Menor:", menor)

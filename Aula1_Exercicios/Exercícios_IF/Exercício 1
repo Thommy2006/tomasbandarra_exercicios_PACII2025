@@ -1,14 +1,11 @@
-# Introduzir os segundos
+# Converter Segundos em Horas, Minutos e Segundos
+
 segundos = int(input("Introduza a hora em segundos: "))
 
-# Horas
 horas = segundos // 3600
 
-# Minutos
 minutos = (segundos % 3600) // 60
 
-# Segundos
 segundos = segundos % 60
 
-# Resultado
 print(f"Horas = {horas}; Minutos = {minutos}; Segundos = {segundos}")

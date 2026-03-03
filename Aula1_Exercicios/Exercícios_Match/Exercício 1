@@ -1,0 +1,13 @@
+# Tipo de dia
+
+diassemanas = ["segunda", "terça", "quarta", "quinta", "sexta"]
+fim_semana = ["sábado", "domingo"]
+
+dia = input("Introduza o nome do dia da semana: ")
+
+if dia in uteis:
+    print("Dia útil")
+elif dia in fim_semana:
+    print("Fim de semana")
+else:
+    print("Esse dia não existe")

@@ -1,0 +1,13 @@
+# Tipo de Pedido
+
+tipo = input("Introduza o tipo de pedido (compra/venda): ")
+valor = float(input("Introduza o valor: "))
+
+pedido = {"tipo": tipo, "valor": valor}
+
+if pedido["tipo"] == "compra":
+    print("Compra de", pedido["valor"], "€")
+elif pedido["tipo"] == "venda":
+    print("Venda de", pedido["valor"], "€")
+else:
+    print("Erro no pedido, o erro pode ser o tipo ou o valor")

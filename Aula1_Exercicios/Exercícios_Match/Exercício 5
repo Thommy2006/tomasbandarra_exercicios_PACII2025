@@ -1,0 +1,14 @@
+# Análise de Mensagem
+
+mensagem = input("Introduza uma mensagem: ")
+
+msg = mensagem.lower()
+
+if msg == "olá" or msg == "bom dia":
+    print("Saudação")
+elif mensagem.endswith("?"):
+    print("Pergunta")
+elif "tchau" in msg or "adeus" in msg:
+    print("Despedida")
+else:
+    print("Mensagem genérica")

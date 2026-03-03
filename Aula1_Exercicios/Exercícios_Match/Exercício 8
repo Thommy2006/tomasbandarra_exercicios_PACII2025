@@ -1,0 +1,23 @@
+# Programa: Operação Matemática
+
+operacao = input("Qual é a operação que deseja fazer (soma, subtrai, multiplica, divide): ")
+num1 = float(input("Introduza o primeiro número: "))
+num2 = float(input("Introduza o segundo número: "))
+
+if operacao == "soma":
+    resultado = num1 + num2
+    print("Resultado:", resultado)
+elif operacao == "subtrai":
+    resultado = num1 - num2
+    print("Resultado:", resultado)
+elif operacao == "multiplica":
+    resultado = num1 * num2
+    print("Resultado:", resultado)
+elif operacao == "divide":
+    if num2 != 0:
+        resultado = num1 / num2
+        print("Resultado:", resultado)
+    else:
+        print("Não é possível dividir por zero!")
+else:
+    print("Operação inválida")

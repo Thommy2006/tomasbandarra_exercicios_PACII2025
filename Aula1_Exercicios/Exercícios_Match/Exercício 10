@@ -1,0 +1,21 @@
+# Pedra, Papel ou Tesoura
+
+jogador1 = input("Jogador 1 (pedra, papel, tesoura): ").lower()
+jogador2 = input("Jogador 2 (pedra, papel, tesoura): ").lower()
+
+
+match (jogador1, jogador2):
+
+    case ("pedra", "pedra") | ("papel", "papel") | ("tesoura", "tesoura"):
+        print("Empate")
+    
+
+    case ("pedra", "tesoura") | ("tesoura", "papel") | ("papel", "pedra"):
+        print("Jogador 1 venceu")
+    
+
+    case ("tesoura", "pedra") | ("papel", "tesoura") | ("pedra", "papel"):
+        print("Jogador 2 venceu")
+    
+    case _:
+        print("Jogada inválida!")

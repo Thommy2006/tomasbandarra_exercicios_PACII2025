@@ -1,8 +1,8 @@
+# Verificar se o Cheque Pode Ser Descontado
 
 saldo = float(input("Introduza o saldo:"))
 cheque = float(input("Introduza o cheque:"))
 
-# Descontar
 if cheque <= saldo:
     saldo = saldo - cheque
     

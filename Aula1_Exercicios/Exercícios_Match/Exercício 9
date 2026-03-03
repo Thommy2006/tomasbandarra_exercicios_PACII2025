@@ -1,0 +1,16 @@
+# Processamento de Requisição
+
+metodo = input("Introduza o método (GET/POST): ")
+conteudo = input("Introduza o conteúdo: ")
+
+requisicao = {"metodo": metodo, "conteudo": conteudo}
+
+if requisicao["metodo"] == "GET":
+    print("Requisição GET recebida")
+elif requisicao["metodo"] == "POST":
+    if requisicao["conteudo"] != "":
+        print("Requisição POST com dados válidos")
+    else:
+        print("Requisição POST sem dados")
+else:
+    print("Método não suportado")

@@ -1,14 +1,13 @@
-# Introduzir os dois números
+# Mostrar Números em Ordem Crescente e Decrescente
+
 num1 = int(input("Introduza o primeiro número: "))
 num2 = int(input("Introduza o segundo número: "))
 
-# Ordem crescente
 if num1 < num2:
     print("Crescente:",num1,num2)
 else:
     print("Crescente:",num2,num1)
 
-# Ordem decrescente
 if num1 > num2:
     print("Decrescente:",num1,num2)
 else:

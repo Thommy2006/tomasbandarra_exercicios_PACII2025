@@ -1,0 +1,17 @@
+# Classificação de Produto
+
+
+categoria = input("Introduza a categoria do produto (eletrônico/alimento): ")
+preco = float(input("Introduza o preço do produto: € "))
+
+produto = {"categoria": categoria, "preco": preco}
+
+if produto["categoria"] == "eletrônico":
+    if produto["preco"] > 1000:
+        print("Produto de luxo")
+    else:
+        print("Produto comum")
+elif produto["categoria"] == "alimento":
+    print("Produto alimentar")
+else:
+    print("Categoria desconhecida")
