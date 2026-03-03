@@ -1,0 +1,11 @@
+
+saldo = float(input("Introduza o saldo:"))
+cheque = float(input("Introduza o cheque:"))
+
+# Descontar
+if cheque <= saldo:
+    saldo = saldo - cheque
+    
+    print("Cheque descontado, saldo:", saldo)
+else:
+    print("Saldo insuficiente.")
