@@ -1,0 +1,7 @@
+# Faça um algoritmo que gere a seguinte série: 10, 20, 30, 40, ..... 980, 990, 1000.
+
+numero = 10
+
+while numero <= 1000:
+    print(numero, end=" ")
+    numero = numero + 10

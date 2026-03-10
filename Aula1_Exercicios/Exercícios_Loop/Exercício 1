@@ -1,0 +1,11 @@
+# Crie um algoritmo que mostre os 30 primeiros números ímpares e pares
+
+print("30 números impares")
+for i in range(0, 30):
+    impar = (i * 2) + 1
+    print(impar, end=" ")
+
+print("\n\n30 números pares")
+for i in range(1, 31):
+    par = i * 2
+    print(par, end=" ")

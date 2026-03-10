@@ -1,0 +1,25 @@
+# Elabore um programa que constitua a média de 30 números pares que sejam introduzidos. Validando a entrada de números inteiros entre 1 e 50.
+
+
+soma = 0
+contador = 0
+
+while contador < 30:
+    print(f"Número {contador + 1} de 30:")
+    num = int(input("Introduza um número par entre 1 e 50: "))
+
+    if num < 1 or num > 50:
+        print("Inválido! O número deve estar entre 1 e 50.\n")
+        continue
+
+    if num % 2 != 0:
+        print("Inválido! O número deve ser par.\n")
+        continue
+
+    soma = soma + num
+    contador = contador + 1
+    print(f"Soma: {soma}\n")
+
+media = soma / 30
+
+print(f"Média: {media:.2f}")
