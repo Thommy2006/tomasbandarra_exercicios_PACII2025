@@ -1,0 +1,13 @@
+# Elabore um programa que lê um número e escreve quantos divisores ele possui.
+
+
+numero = int(input("Digite um número inteiro: "))
+
+contador = 0
+
+for i in range(1, numero + 1):
+    if numero % i == 0:
+        contador = contador + 1
+        print(f"Divisor encontrado: {i}")
+
+print(f"\nO número {numero} tem {contador} divisor(es).")

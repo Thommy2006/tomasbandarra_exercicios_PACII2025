@@ -1,0 +1,16 @@
+# Contar palavras numa frase
+
+
+frase = input("Introduza uma frase: ")
+
+palavras = frase.split()
+
+contar = {}
+
+for palavra in palavras:
+    if palavra in contagem:
+        contar[palavra] = contar[palavra] + 1
+    else:
+        contar[palavra] = 1
+
+print(contar)

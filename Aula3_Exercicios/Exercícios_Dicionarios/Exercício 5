@@ -1,0 +1,13 @@
+# Contar letras numa palavra
+
+palavra = input("Introduza uma palavra: ")
+
+contar = {}
+
+for letra in palavra:
+    if letra in contar:
+        contar[letra] = contar[letra] + 1
+    else:
+        contar[letra] = 1
+
+print(contar)

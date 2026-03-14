@@ -1,0 +1,20 @@
+# Notas dos alunos
+
+
+notas = {
+    'João': [7, 8, 9],
+    'Maria': [10, 9, 8],
+    'Ana': [6, 7, 8]
+}
+
+
+for aluno in notas:
+    lista_notas = notas[aluno]
+    
+    soma = 0
+    for nota in lista_notas:
+        soma = soma + nota
+    
+    media = soma / len(lista_notas)
+    
+    print(f"{aluno}: {media}")

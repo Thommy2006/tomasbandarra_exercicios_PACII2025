@@ -1,0 +1,31 @@
+# Exercício 1: Criar um dicionário simples
+# Cria um dicionário chamado alunos que receba nome, idade e curso de cada aluno
+
+
+alunos = []
+
+while True:
+    print("\n1 - Inserir")
+    print("2 - Listar")
+    
+    escolha = input("Escolha: ")
+    
+    if escolha == "1":
+        nome = input("Nome: ")
+        idade = input("Idade: ")
+        curso = input("Curso: ")
+        
+        aluno = {"nome": nome, "idade": idade, "curso": curso}
+        alunos.append(aluno)
+        print("Dados guardados")
+    
+    elif escolha == "2":
+        if len(alunos) == 0:
+            print("Nenhum aluno com esse nome")
+        else:
+            for a in alunos:
+                print(f"\nNome: {a['nome']}")
+                print(f"Idade: {a['idade']}")
+                print(f"Curso: {a['curso']}")
+    else:
+        print("Opção inválida.")

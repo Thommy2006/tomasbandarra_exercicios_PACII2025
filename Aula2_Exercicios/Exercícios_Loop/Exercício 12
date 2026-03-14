@@ -1,0 +1,47 @@
+# Elabore um programa que leia quantos números quer que se efetue a soma, subtrações, divisões, multiplicações e no fim por meio de um acumulador diga quantas operações foram efetuadas. Exemplo introduzindo o número 60 o programa deve apresentar 60 a somar, dividir multiplicar e subtrair por todos os números menores que ele.
+
+
+numero = int(input("Introduza um número: "))
+
+operacoes = 0
+soma = 0
+subtracao = 0
+multiplicacao = 1
+divisao = 0
+
+print(f"\nOperações com {numero} e números menores que ele:\n")
+
+for i in range(1, numero):    
+
+    resultado_soma = numero + i
+    soma = soma + resultado_soma
+    operacoes += 1
+    print(f"Soma: {numero} + {i} = {resultado_soma}")
+    
+
+    resultado_subtracao = numero - i
+    subtracao = subtracao + resultado_subtracao
+    operacoes += 1
+    print(f"Subtração: {numero} - {i} = {resultado_subtracao}")
+    
+
+    resultado_multiplicacao = numero * i
+    multiplicacao = multiplicacao * resultado_multiplicacao
+    operacoes += 1
+    print(f"Multiplicação: {numero} × {i} = {resultado_multiplicacao}")
+    
+
+    if i != 0:
+        resultado_divisao = numero / i
+        divisao = divisao + resultado_divisao
+        operacoes += 1
+        print(f"Divisão: {numero} ÷ {i} = {resultado_divisao:.2f}")
+    
+    print()
+
+
+print(f"Total de operações efetuadas: {operacoes}")
+print(f"Soma de todas as somas: {soma}")
+print(f"Soma de todas as subtrações: {subtracao}")
+print(f"Produto de todas as multiplicações: {multiplicacao}")
+print(f"Soma de todas as divisões: {divisao:.2f}")

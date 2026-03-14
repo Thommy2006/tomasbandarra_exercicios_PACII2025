@@ -1,0 +1,12 @@
+# Inverter chaves e valores
+
+
+d = {'a': 1, 'b': 2, 'c': 3}
+
+novo_dic = {}
+
+for chave in d:
+    valor = d[chave]
+    novo_dic[valor] = chave
+
+print(novo_dic)

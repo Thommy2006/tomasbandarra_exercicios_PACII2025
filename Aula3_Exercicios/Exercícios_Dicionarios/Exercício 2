@@ -1,0 +1,6 @@
+# Aceder a valores no dicionário dado o seguinte dicionário
+
+
+carro = {'marca': 'Toyota', 'modelo': 'Corolla', 'ano': 2020}
+
+print(carro['Modelo'])
