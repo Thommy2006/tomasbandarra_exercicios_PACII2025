@@ -1,0 +1,10 @@
+[
+  {
+    "timestamp": "2026-04-01T17:17:48.413798",
+    "username": "bravoz",
+    "message": "senha:Joao12321",
+    "patterns": [
+      "\\b(password|palavra.?passe|senha|pin)\\b"
+    ]
+  }
+]
